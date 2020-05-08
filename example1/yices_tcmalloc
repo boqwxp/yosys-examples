@@ -1,0 +1,6 @@
+user@host:~/github/yosys-examples/example1$ #TCMalloc:
+user@host:~/github/yosys-examples/example1$ time $(../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 example.smt2 &>/dev/null)
+
+real    3m11.852s
+user    3m8.928s
+sys     0m0.549s
