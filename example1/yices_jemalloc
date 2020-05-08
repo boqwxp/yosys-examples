@@ -1,0 +1,6 @@
+user@host:~/github/yosys-examples/example1$ #JEMalloc:
+user@host:~/github/yosys-examples/example1$ time $(../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 example.smt2 &>/dev/null)
+
+real    5m7.416s
+user    3m20.906s
+sys     1m44.346s
