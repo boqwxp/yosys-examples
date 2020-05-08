@@ -1,0 +1,6 @@
+user@host:~/github/yosys-examples/example1$ #GNU malloc:
+user@host:~/github/yosys-examples/example1$ time $(../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 example.smt2 &>/dev/null)
+
+real    6m17.133s
+user    4m5.808s
+sys     2m8.390s
