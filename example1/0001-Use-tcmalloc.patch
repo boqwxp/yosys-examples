@@ -1,0 +1,24 @@
+From 28001cb54287a8d51127281cac7b267225c93143 Mon Sep 17 00:00:00 2001
+From: Alberto Gonzalez <boqwxp@airmail.cc>
+Date: Fri, 8 May 2020 20:33:07 +0000
+Subject: [PATCH] Use tcmalloc.
+
+---
+ src/Makefile | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/Makefile b/src/Makefile
+index 57b128bd..6f0e21da 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -779,6 +779,7 @@ endif
+ ifeq ($(YICES_MODE),release)
+ CFLAGS := $(CFLAGS) -O3 -fomit-frame-pointer $(NO_STACK_PROTECTOR)
+ CPPFLAGS := $(CPPFLAGS) -DNDEBUG
++LIBS += -ltcmalloc
+ else
+ ifeq ($(YICES_MODE),devel)
+ CFLAGS := $(CFLAGS) -O3 -g -fomit-frame-pointer $(NO_STACK_PROTECTOR)
+-- 
+2.20.1
+
