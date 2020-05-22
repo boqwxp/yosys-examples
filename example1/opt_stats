@@ -1,0 +1,131 @@
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.smt2 
+	(~367MB max)
+
+	...
+	(exist/forall solver: 2642 iterations)
+	sat
+
+	real    3m10.614s
+	user    3m5.142s
+	sys     0m1.599s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.abcnoop.smt2 
+	(~375MB max)
+
+	...
+	(exist/forall solver: 4746 iterations)
+	sat
+
+	real    4m43.010s
+	user    4m35.629s
+	sys     0m2.091s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.strash.smt2 
+	(over 1GB max)
+
+	...
+	(exist/forall solver: 4746 iterations)
+	sat
+
+	real    18m9.884s
+	user    17m42.764s
+	sys     0m7.617s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.drwsat.smt2 
+	(~320MB max)
+
+	...
+	(exist/forall solver: 3246 iterations)
+	sat
+
+	real    5m29.577s
+	user    5m19.700s
+	sys     0m2.820s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.fraig.smt2 
+	(~810MB max)
+
+	...
+	(exist/forall solver: 4744 iterations)
+	sat
+
+	real    11m17.294s
+	user    10m59.978s
+	sys     0m4.219s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.opt.smt2 
+	(~318MB max)
+
+	...
+	(exist/forall solver: 4771 iterations)
+	sat
+
+	real    6m16.527s
+	user    6m6.789s
+	sys     0m3.125s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.optdrwsat.smt2 
+	(~350MB max)
+
+	...
+	(exist/forall solver: 4771 iterations)
+	sat
+
+	real    6m22.629s
+	user    6m12.231s
+	sys     0m3.217s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.drwsatopt.smt2 
+	(~295MB max)
+
+	...
+	(exist/forall solver: 1256 iterations)
+	sat
+
+	real    1m25.972s
+	user    1m23.743s
+	sys     0m0.816s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.drwsatbopt.smt2 
+	(~308MB max)
+
+	...
+	(exist/forall solver: 1256 iterations)
+	sat
+
+	real    1m31.524s
+	user    1m28.909s
+	sys     0m0.794s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.extraopt.smt2 
+	(~312MB max)
+
+	...
+	(exist/forall solver: 4768 iterations)
+	sat
+
+	real    4m3.770s
+	user    3m57.015s
+	sys     0m1.823s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.drwsatextraopt.smt2 
+	(~301MB max)
+
+	...
+	(exist/forall solver: 1256 iterations)
+	sat
+
+	real    1m0.717s
+	user    0m58.772s
+	sys     0m0.585s
+
+time ../../yices2/build/x86_64-pc-linux-gnu-release/dist/bin/yices-smt2 -v 9 example.drwsatbextraopt.smt2 
+	(~296MB max)
+
+	...
+	(exist/forall solver: 1256 iterations)
+	sat
+
+	real    0m59.799s
+	user    0m58.066s
+	sys     0m0.548s
