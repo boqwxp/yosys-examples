@@ -1,0 +1,34 @@
+read_verilog alu2.v
+techmap
+flatten
+select alu2_lev2
+glift -optimize-precise
+techmap
+opt
+rename alu2_lev2 uut
+cd ..
+delete [AIONX][NVXR]2
+read_verilog alu2.v
+techmap
+flatten
+select alu2_lev2
+glift -create-precise
+techmap
+opt
+rename alu2_lev2 spec
+cd ..
+delete [AIONX][NVXR]2
+select -list o:*
+miter -equiv spec uut miter
+flatten
+delete uut spec
+techmap
+opt
+stat miter
+abc -script +print_stats;strash;print_stats;fraig;print_stats;dc2,-l,-b;print_stats;irw,-l,-z;print_stats;refactor,-N,15,-z;print_stats;dch,-S,50000,-C,10000;print_stats;dc2,-l;print_stats;fraig,-C,10000;print_stats;drwsat,-b;print_stats;drwsat;print_stats miter
+techmap
+opt
+stat
+qbfsat -dump-final-smt2 /tmp/test.smt2 -show-smtbmc -solver yices -timeout 3600 -nocleanup -assume-outputs -assume-negative-polarity -specialize miter 
+stat
+shell
